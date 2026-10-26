@@ -1,0 +1,20 @@
+export const UI_COLORS = {
+  white: '#ffffff',
+  black: '#111111',
+  gray: '#d3d3d3',
+  darkGray: '#898989',
+  lightGray: '#efefef',
+  highlight: '#fdf5e1',
+  red: '#ff0000',
+  green: '#00ff32',
+  blue: '#5676d3',
+  lightBlue: '#eff3ff',
+  yellow: '#FFFF00',
+  brown: '#964B00',
+  main: '#5ae9e4',
+} as const;
+
+export const COLORS = {
+  ...UI_COLORS,
+  main: '#6862a8',
+};
