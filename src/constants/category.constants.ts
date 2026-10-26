@@ -35,8 +35,4 @@ export const CATEGORY_LIST = [
     name: 'SEO',
     id: 'seo',
   },
-  {
-    name: '일상',
-    id: 'daily',
-  },
 ] as const;

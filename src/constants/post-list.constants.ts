@@ -187,16 +187,6 @@ export const POST_LIST: PostListItemType[] = [
     date: '2026.03.14',
   },
   {
-    id: '19',
-    title:
-      '(저번주에 작성하지 못해서 이번에 쓰는) 2026년도 상반기 그로스로그에서 성장할 나의 목표',
-    category: '일상',
-    categoryId: 'daily',
-    description: '2026년도 상반기 그로스로그를 다니면서 성장 목표 세우기',
-    route: 19,
-    date: '2026.03.28',
-  },
-  {
     id: '20',
     title: '[C++] RTSP 실시간 웹 스트리밍 서버 구축기',
     category: '서버',
