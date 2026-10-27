@@ -33,7 +33,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             className="hover:text-primary">
-            Notion
+            이력서
           </a>
           <span aria-hidden="true">·</span>
           <a href="/rss.xml" className="hover:text-primary">

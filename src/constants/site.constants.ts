@@ -8,8 +8,7 @@ export const SITE = {
   ogImage: '/brand/memo-pencil-preview.png',
   avatar: '/images/profile-image.png',
   github: 'https://github.com/hanatailedtit',
-  resume:
-    'https://jazzy-chanter-d66.notion.site/cb9a128e18254e878159b6a65b1cfe1e',
+  resume: 'https://resume.createdoodle.dev',
   featuredPostId: '20',
 };
 export const KEYWORDS = ['Next.js', 'vue', 'C++', 'RTSP', 'Vercel', '임베디드'];
