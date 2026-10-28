@@ -1,0 +1,100 @@
+{
+  "checkedAt": "2026-10-28T03:44:18.707Z",
+  "target": "https://blog.createdoodle.dev",
+  "browser": "Chromium, headless",
+  "checks": [
+    "페이지 이동, 카테고리 변경 시 페이지 초기화, 브라우저 뒤로 가기 상태 복원",
+    "Ctrl+K 검색 다이얼로그, 검색 결과와 빈 상태, Escape 닫기",
+    "카테고리 패널은 URL 이동 없이 열림, Escape 닫기 및 트리거 포커스 복원",
+    "실제 본문과 일치하는 목차 앵커, 코드 블록, 스크롤 연동 읽기 진행률",
+    "다크 모드 전환과 새로고침 후 선택 유지",
+    "375/390/768/1024/1440px 홈·글 상세: 가로 넘침 없음",
+    "확인한 페이지에서 JavaScript pageerror 없음"
+  ],
+  "accessibility": [
+    {
+      "screen": "desktop home",
+      "violations": []
+    },
+    {
+      "screen": "search dialog",
+      "violations": []
+    },
+    {
+      "screen": "category drawer",
+      "violations": []
+    },
+    {
+      "screen": "desktop article",
+      "violations": [
+        {
+          "id": "scrollable-region-focusable",
+          "impact": "serious",
+          "targets": [
+            [
+              ".overflow-hidden.bg-code-surface.text-code-foreground:nth-child(70) > pre"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "screen": "dark home",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/images/home-desktop.jpg",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "source": "https://blog.createdoodle.dev/"
+    },
+    {
+      "path": "docs/images/search-desktop.jpg",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "source": "https://blog.createdoodle.dev/"
+    },
+    {
+      "path": "docs/images/reading-desktop.jpg",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "source": "https://blog.createdoodle.dev/post/17"
+    },
+    {
+      "path": "docs/images/home-dark.jpg",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "source": "https://blog.createdoodle.dev/"
+    },
+    {
+      "path": "docs/images/home-mobile.jpg",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "https://blog.createdoodle.dev/"
+    }
+  ],
+  "notChecked": [
+    "실제 모바일 기기",
+    "Safari/Firefox",
+    "네이티브 공유 시트 및 클립보드 권한별 동작",
+    "성능·트래픽·사용자 지표"
+  ],
+  "tools": {
+    "playwright": "1.64.1",
+    "axe-core": "4.14.0"
+  },
+  "accessibilityTags": ["wcag2a", "wcag2aa", "wcag21aa"],
+  "scope": "배포 서비스에 대한 일회성 검사. 저장소의 단위 테스트·CI에 통합되어 있지 않음."
+}
